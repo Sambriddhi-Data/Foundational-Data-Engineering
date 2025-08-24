@@ -1,15 +1,15 @@
 # config.yaml
 database:
- host: ${DB_HOST}
- database: ${DB_NAME}
- user: ${DB_USER}
- password: ${DB_PASSWORD}
- port: ${DB_PORT}
+ host: localhost
+ database: FDE
+ user: postgres
+ password: postgres
+ port: 5432
 
 
 s3:
- bucket_name: ${S3_BUCKET_NAME}
- region: ${S3_REGION}
+ bucket_name: fde-storage-bucket-samm
+ region: us-east-1
  files:
    JSON/products.json: lnd_products_json
    JSON/sales.json: lnd_sales_json
